@@ -1,0 +1,52 @@
+print('Hello world')
+
+num1=int(input('Enter firt number:'))
+num2=int(input('Enter second number:'))
+sum=num1 + num2
+print("The sum of numbers is:",sum)
+
+
+a=int(input('Enter a value:'))
+b=int(input('Enter a value:'))
+import math
+print(math.sqrt(a))
+print(math.sqrt(b))
+
+a=float(input('Enter side1:'))
+b=float(input('Enter side2:'))
+c=float(input('Enter side3:'))
+s=(a+b+c)/2
+area=(s*(s-a)*(s-b)*(s-c))
+import math
+result=math.sqrt(area)
+print('The area of triangle is%0.2f' %result)
+
+a=int(input('Enter a:'))
+b=int(input('Enter b:'))
+c=int(input('Enter c:'))
+d=(b**2)-(4*a*c)
+import cmath
+sol1=(-b-cmath.sqrt(d))/(2*a)
+sol2=(-b+cmath.sqrt(d))/(2*a)
+print('The roots of equation are{0}and{1}'.format(sol1,sol2))"""
+
+
+
+a=int(input('Enter a:'))
+b=int(input('Enter b:'))
+a,b=b,a
+print('The vaule of a after swapping is:',a)
+print('The vaule of b after swapping is:',b)"""
+
+import random
+print(random.randint(2,19))
+
+kilometers=int( input('Enter the value in kilometer:'))
+con_factor=0.621371
+miles=kilometers*con_factor
+print('%d kilometers is equal to %0.2f miles' %(kilometers,miles))
+
+celsius=float(input('Enter the value of temperature:'))
+fahrenheit=(celsius*1.8)+32
+print('%0.2f celcius is equal to %0.2f' %(celsius,fahrenheit))
+
