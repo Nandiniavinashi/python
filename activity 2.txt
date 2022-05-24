@@ -1,0 +1,159 @@
+#1 postive or negative
+basicnum=float(input('Enter the value:'))
+if num>0:
+    print("POSITIVE NUMBER")
+elif num==0:
+     print("ZERO")
+else:
+    print("NEGATIVE NUMBER")
+
+#2 odd or even
+num=int(input('Enter the value:'))
+if num%2==0:
+    print("Even")
+else:
+    print("Odd")
+
+#3 leap year
+year=int(input('Enter the year:'))
+if (year%400==0)and (year%100==0):
+    print("{} is a leap year".format(year))
+elif (year%4==0)and (year%100!=0):
+     print("{} is a leap year".format(year))
+else:
+     print("{} is  not a leap year".format(year))
+#4 Largest num    
+num1=float(input('Enter first number:'))
+num2=float(input('Enter second number:'))
+num3=float(input('Enter third number:'))
+if(num1>=num2)and (num1>=num3):
+    largest=num1
+elif (num2>=num1)and (num2>=num3):
+      largest=num2
+else:
+    largest=num3
+print("The largest number is:",largest)
+
+#5 Prime num
+num=int(input('Enter the number:'))
+if num > 1:
+  
+   for i in range(2,num):
+       if (num % i) == 0:
+           print(num,"is not a prime number")
+           print(i,"times",num//i,"is",num)
+           break
+   else:
+       print(num,"is a prime number")
+       
+
+else:
+   print(num,"is not a prime number")
+
+#6 Prime num in interval
+l=int(input('Enter the starting number:'))
+u=int(input('Enter the ending number:'))
+
+for num in range(l,u+1):
+    if num>1:
+        for i in range(2,num):
+            if num%i==0:
+                break
+        else:
+            print(num)
+
+#7 Factorial
+num=int(input('Enter the value:'))
+factorial=1
+if num<0:
+    print('No factorial')
+elif num==0:
+    print('Factorial of 0 is 1')
+else:
+    for i in range(1,num+1):
+        factorial=factorial*i
+    print ('The factorial of',num, "is",factorial)
+
+#8 Multiplication table
+num=int(input('Enter the number:'))
+for i in range(1,11):
+    print(num,'x',i,'=',num*i)
+
+#9 Fibonacci 
+num=int(input('Enter the number:'))
+n1,n2=0,1
+sum=0
+if num<=0:
+ print('Error')
+else:
+    for i in range(0,num):
+        print(sum, end=" ")
+        n1=n2
+        n2=sum
+        sum=n1+n2
+
+#10 Armstrong num
+num=int(input('Enter the number:'))
+sum=0
+temp=num
+while temp>0:
+    digit= temp%10
+    sum=sum+digit**3
+    temp=temp//10
+if num==sum:
+    print(num,'is armstrong number')
+else:
+    print(num,'is not armstrong number')
+
+#11 Armstrong in interval
+a=100
+b=2000
+for num in range(a,b+1):
+   
+    sum=0
+    temp=num
+    while temp>0:
+        digit= temp%10
+        sum=sum+digit**3
+        temp=temp//10
+    if num==sum:
+        print(num)
+
+#12 Sum of natural num
+num=int(input('Enter the number:'))
+sum=0
+for num in range(1,num+1):
+    sum=sum+num
+print(sum)
+
+#13 pyramid
+rows=int(input('Enter the number of rows:'))
+for i in range(1,rows):
+    for j in range(1,1+i):
+        print(j,end='')
+    print("\n")
+
+#14 Dictionary
+d = {'k1': 'juice', 'k2': 'grill', 'k3': 'sweet'}
+for key, value in d.iteritems():
+    print(key, value)
+
+#15 Reverse
+rever_no=0
+while num!=0:
+    digit=num%10
+    rever_no=rever_no*10+digit
+    num=num//10
+print(rever_no)
+
+#16 Power
+base=int(input('base:'))
+exponent=int(input('exponent:'))
+result=pow(base,exponent)
+print(f'the exponent is {result} ')
+
+
+
+
+
+
